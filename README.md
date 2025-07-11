@@ -47,5 +47,5 @@ lightweight AXI4-Lite slave peripheral in Verilog that exposes a small register 
 | `RRESP`  | OUT | Response (we'll use `OKAY`) |
 
 
-#Architecture Block Diagram:
+#Draw.io Architecture Block Diagram:
 <img width="956" height="551" alt="axi_lite_arch_block drawio" src="https://github.com/user-attachments/assets/25876089-048a-4d3e-88e0-7ea9f99a4e6f" />
