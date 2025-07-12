@@ -51,21 +51,22 @@ lightweight AXI4-Lite slave peripheral in Verilog that connects a small register
 <img width="956" height="551" alt="axi_lite_arch_block drawio" src="https://github.com/user-attachments/assets/25876089-048a-4d3e-88e0-7ea9f99a4e6f" />
 
 #**Whats happening?**
+
 ##Testbench
--axi_lite_slave_tb
--Writes to reg_data (slave) with 0xCAFEBABE
--Reads back from reg_data
--Reads from reg_status
--Exercises AXI handshakes from interfaces (out)
+  - axi_lite_slave_tb
+  - Writes to reg_data (slave) with 0xCAFEBABE
+  - Reads back from reg_data
+  - Reads from reg_status
+  - Exercises AXI handshakes from interfaces (out)
 
 ##Slave
--FSM handles handshakes
--reg_data stores (W/R) data
--reg_status constant (R)only status
--DECODER selects which register to access
+  - FSM handles handshakes
+  - reg_data stores (W/R) data
+  - reg_status constant (R)only status
+  - DECODER selects which register to access
 
 ##Waveform
--Should expect (W)reg_data updates
--Should expext (R)rdata values 0xCAFEBABE, 0xDEADBEEF
+  - Should expect (W)reg_data updates
+  - Should expext (R)rdata values 0xCAFEBABE, 0xDEADBEEF
 
 
